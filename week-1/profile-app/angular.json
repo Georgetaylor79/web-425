@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstap.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": [
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "profile-app"
+    }
+  },
+  "defaultProject": "profile-app",
+  "cli": {
+    "analytics": false
+  }
 }
