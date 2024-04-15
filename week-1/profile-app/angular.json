@@ -29,8 +29,7 @@
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/bootstrap/dis/js/bootstrap.js"
-
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
@@ -124,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "profile-app"
+    }
+  },
+  "defaultProject": "profile-app",
+  "cli": {
+    "analytics": false
+  }
 }
