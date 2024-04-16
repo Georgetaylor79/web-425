@@ -5,7 +5,7 @@ export default class Person {
     favoriteFood: string;
     favoriteColor: string;
     keywords = [
-      "#TypeScript", "2020", "#CodingWithAngular", "#ngOmaha"
+      "#TypeScript", "#2020", "#CodingWithAngular", "#ngOmaha"
     ];
   constructor(fullName: string, favoriteFood: string, favoriteColor: string) {
     this.fullName = fullName;
@@ -29,6 +29,7 @@ export class MyDetailsComponent implements OnInit {
 
   constructor() {
     this.myProfile = new Person("George Taylor", "Shrimp","Orange");
+    this.myProfile.toString();
    }
 
   ngOnInit(): void {
