@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-export default class Person{
+export default class Person {
     fullName: string;
     favoriteFood: string;
     favoriteColor: string;
