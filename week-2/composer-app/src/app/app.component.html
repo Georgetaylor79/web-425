@@ -19,21 +19,17 @@
   </ul>
 </nav>
 
-<div class="container">
+<div role="main" class="container">
   <br /><br />
 
-  <h2>Composer App</h2>
+  <h2>{{ assignment }}</h2>
 
-<div class="row">
-
-  <div class="col-sm-12">
-
-    <div class="alert alert-success" role="alert">
-
-       <router-outlet></router-outlet>
+  <br /><br />
+  <div class="row">
+    <div class="col-sm-12">
+      <div>
+        <router-outlet></router-outlet>
+      </div>
     </div>
-
   </div>
-</div>
-
 </div>

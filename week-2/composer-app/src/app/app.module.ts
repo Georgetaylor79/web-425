@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { ComposerListComponent } from './composer-list/composer-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-import { ComposerImageComponent } from './composer-image/composer-image.component';
-import { ComposerDetailsComponent } from './composer-details/composer-details.component';
+
+
 
 @NgModule({
   declarations: [
@@ -15,8 +15,7 @@ import { ComposerDetailsComponent } from './composer-details/composer-details.co
     ComposerListComponent,
     ContactComponent,
     AboutComponent,
-    ComposerImageComponent,
-    ComposerDetailsComponent
+   
   ],
   imports: [
     BrowserModule,
