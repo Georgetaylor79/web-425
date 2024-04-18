@@ -1,3 +1,10 @@
+/**
+ * Title: composer-list.component.ts
+ * Author: George Taylor
+ * Date: 14 April 2024
+ * Description: Composer list component; displays a list of composers
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 export default class Composer {
