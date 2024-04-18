@@ -1,3 +1,11 @@
+/**
+ * Title: about.component.ts
+ * Author: George Taylor
+ * Date: 14 April 2024
+ * Description: About component (About Us page)
+ */
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
