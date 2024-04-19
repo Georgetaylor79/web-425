@@ -6,16 +6,8 @@
  */
 
 import { Component, OnInit } from '@angular/core';
-
-export default class Composer {
-  fullName: String;
-  genre: String;
-
-   constructor(fullName: string, genre: string) {
-    this.fullName = fullName;
-    this.genre = genre;
-   }
-}
+import { IComposer } from '../composer.interface';
+import { Composer } from '../composer.closs';
 @Component ({
   selector: 'app-composer-list',
   templateUrl: './composer-list.component.html',
@@ -23,16 +15,10 @@ export default class Composer {
 })
 export class ComposerListComponent implements OnInit {
 
-  composers: Array<Composer>;
+   composers: Array<IComposer>;
 
   constructor()  {
-    this.composers = [
-      new Composer("Johann Sebastian Bach","Classical"),
-      new Composer("Pyotr Ilyich Tchaikovsky","Classical"),
-      new Composer("Claude Debussy","Classical"),
-      new Composer("Richard Wagner","Classical"),
-      new Composer("Frederic Chopin","Classical")
-    ]
+    this.composers = new Composer().getComposers();
   }
 
   ngOnInit(): void {
