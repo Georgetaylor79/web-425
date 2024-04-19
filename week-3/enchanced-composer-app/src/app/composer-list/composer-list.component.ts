@@ -7,7 +7,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { IComposer } from '../composer.interface';
-import { Composer } from '../composer.closs';
+import { Composer } from '../composer.class';
 @Component ({
   selector: 'app-composer-list',
   templateUrl: './composer-list.component.html',
