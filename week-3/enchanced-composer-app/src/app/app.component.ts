@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  assignment: string = 'Composer App';
+  assignment: string = 'Exercise 3.2 - Passing Data to Routes, Part 1';
 }

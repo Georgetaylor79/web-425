@@ -7,7 +7,7 @@ import { ComposerListComponent } from './composer-list/composer-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ComposerDetailsComponent } from './composer-details/composer-details.component';
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,11 +17,12 @@ import { ComposerDetailsComponent } from './composer-details/composer-details.co
     ContactComponent,
     AboutComponent,
     ComposerDetailsComponent,
-   
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
