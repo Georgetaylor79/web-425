@@ -14,7 +14,12 @@ export class ComposerDetailsComponent implements OnInit {
   composer: IComposer;
 
   constructor(private route: ActivatedRoute) {
-    
+    this.composerId = parseInt(this.route.snapshot.paramMap.get('composerId'), 10);
+
+    if (this.composerId) {
+      this.composer = new Composer().getComposer(this.composerId);
+    }
+
    }
 
   ngOnInit(): void {
