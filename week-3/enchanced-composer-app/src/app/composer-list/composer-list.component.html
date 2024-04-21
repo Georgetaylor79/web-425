@@ -10,9 +10,9 @@
       </thead>
       <tbody *ngFor="let composer of composers">
         <tr>
-          <td scope ="row">
+          <td scope="row">
             <a routerLink="/composer-details/{{ composer.composerID }}">
-              {{ composer.composerID }}
+              {{ composer.composerId }}
             </a>
           </td>
           <td scope="row">{{ composer.fullName }}</td>
