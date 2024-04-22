@@ -10,7 +10,7 @@ import { ComposerDetailsComponent } from './composer-details/composer-details.co
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AppRoutes } from './app.routing';
-import { RouterModule} from '@angular/router';
+
 
 
 
@@ -27,8 +27,8 @@ import { RouterModule} from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
     RouterModule.forRoot(AppRoutes)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
