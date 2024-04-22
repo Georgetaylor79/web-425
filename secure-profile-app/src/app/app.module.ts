@@ -9,6 +9,9 @@ import { AboutComponent } from './about/about.component';
 import { ComposerDetailsComponent } from './composer-details/composer-details.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { AppRoutes } from './app.routing';
+import { RouterModule} from '@angular/router';
+
 
 
 @NgModule({
@@ -25,6 +28,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule
+    RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
