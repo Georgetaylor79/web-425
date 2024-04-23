@@ -7,7 +7,8 @@ import { ComposerListComponent } from './composer-list/composer-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-
+import { AppRoutes } from './app.routing';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,11 +18,12 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     AboutComponent,
     HomeComponent,
-   
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
