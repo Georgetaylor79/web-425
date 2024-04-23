@@ -8,6 +8,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ComposerDetailsComponent } from './composer-details/composer-details.component';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AppRoutes } from './app.routing';
 
 
 @NgModule({
@@ -17,12 +19,13 @@ import { RouterModule } from '@angular/router';
     ContactComponent,
     AboutComponent,
     ComposerDetailsComponent,
+    HomeComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
