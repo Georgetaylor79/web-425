@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ComposerListComponent } from './composer-list/composer-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -15,6 +16,7 @@ import { AboutComponent } from './about/about.component';
     ComposerListComponent,
     ContactComponent,
     AboutComponent,
+    HomeComponent,
    
   ],
   imports: [
