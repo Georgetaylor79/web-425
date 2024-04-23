@@ -33,9 +33,14 @@
     <div class="col-sm-8">
       <app-my-details></app-my-details>
     </div>
-    <div class="col-sm-12">
 
-      <div>
+    <ng-template #showError>
+      <div class="col-sm-12">
+
+        <div>
+
+    </ng-template>
+    
         <router-outlet></router-outlet>
       </div>
     </div>
