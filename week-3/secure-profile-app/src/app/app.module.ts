@@ -8,6 +8,7 @@ import { MyDetailsComponent } from './my-details/my-details.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutes } from './app.routing';
 import { RouterModule } from '@angular/router';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     MyImageComponent,
     MyDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
