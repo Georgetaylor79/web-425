@@ -19,7 +19,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
     RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
