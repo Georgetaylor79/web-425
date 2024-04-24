@@ -12,4 +12,7 @@ export class SigninComponent implements OnInit {
   ngOnInit(): void {
   }
 
+    signin () {
+      alert("User signed in")
+    }
 }
