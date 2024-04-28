@@ -1,5 +1,12 @@
-import { IComposer } from "./composer.interface";
-export class Composer {
+import { Injectable } from '@angular/core';
+import { IComposer } from './composer.interface';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ComposerService {
+
+ 
      composers: Array<IComposer>;
 
    constructor() {
@@ -39,3 +46,4 @@ getComposer(composerId: number) {
 }
 
 }
+
