@@ -20,7 +20,7 @@ import { Observable } from 'rxjs';
 })
 export class ComposerListComponent implements OnInit {
 
-   composers: Observable<IComposer>;
+   composers: Observable<IComposer[]>;
    txtSearchControl= new FormControl('');
 
   constructor(private composerService: ComposerService)  {
