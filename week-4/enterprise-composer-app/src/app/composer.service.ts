@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { IComposer } from './composer.interface';
+import { Observable } from 'rxjs';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ComposerService {
 
- 
+
      composers: Array<IComposer>;
 
    constructor() {
@@ -34,8 +36,8 @@ export class ComposerService {
     ]
  }
 
- getComposers() {
-      return this.composers;
+ getComposers(): Observable<IComposer[] {
+      return of(this.composers);
  }
 getComposer(composerId: number) {
   for (let composer of this.composers) {
