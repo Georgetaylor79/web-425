@@ -36,10 +36,10 @@ export class ComposerService {
     ]
  }
 
- getComposers(): Observable<IComposer[] {
-      return of(this.composers);
- }
- 
+getComposers(): Observable<IComposer[]> {
+  return of(this.composers);
+}
+
 getComposer(composerId: number) {
   for (let composer of this.composers) {
        if (composer.composerId === composerId) {
