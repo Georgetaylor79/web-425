@@ -10,8 +10,8 @@ export class HomeComponent implements OnInit {
 
   isLoggedIn: Boolean;
 
-  constructor(private route: ActivatedRoute){
-    this.isLoggedIn = Boolean(this.route.snapshot.queryParamMap.get('isLoggedIn'));
+  constructor(){
+
    }
 
   ngOnInit(): void {
