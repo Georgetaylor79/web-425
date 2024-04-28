@@ -7,7 +7,9 @@
 
 import { Component, OnInit } from '@angular/core';
 import { IComposer } from '../composer.interface';
-import { Composer } from '../composer.class';
+import { ComposerService } from '../composer.service';
+
+
 @Component ({
   selector: 'app-composer-list',
   templateUrl: './composer-list.component.html',
@@ -17,8 +19,8 @@ export class ComposerListComponent implements OnInit {
 
    composers: Array<IComposer>;
 
-  constructor()  {
-    this.composers = new Composer().getComposers();
+  constructor(private composerService: ComposerService)  {
+    this.composers = this.composerService.getComposers();
   }
 
   ngOnInit(): void {
