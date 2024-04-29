@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "in-n-outbooksp11"
+    }
+  },
+  "defaultProject": "in-n-outbooksp11",
+  "cli": {
+    "analytics": false
+  }
 }
