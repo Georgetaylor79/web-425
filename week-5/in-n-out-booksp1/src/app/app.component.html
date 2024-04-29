@@ -16,13 +16,14 @@
 </mat-toolbar>
 
 <br />
+<div fxLayout="row wrap">
 
-<div fxFlex>
+  <div fxFlex>
 
-  <mat-card class="main-container">
-    <mat-card-title class="blue">
-      {{ assignment }}
-    </mat-card-title>
+    <mat-card class="main-container">
+      <mat-card-title class="blue">
+        {{ assignment }}
+      </mat-card-title>
 
     <br />
     <br />
@@ -31,6 +32,6 @@
       <router-outlet></router-outlet>
     </mat-card-content>
   </mat-card>
-</div>
+  </div>
 </div>
 
