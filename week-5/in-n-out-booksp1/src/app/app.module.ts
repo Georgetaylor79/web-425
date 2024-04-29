@@ -32,8 +32,6 @@ import { MatIconModule } from '@angular/material/icon';
     MatListModule,
     FlexLayoutModule,
     MatIconModule
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]
