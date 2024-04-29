@@ -33,7 +33,7 @@ export class ComposerListComponent implements OnInit {
   }
 
   filterComposers(name:string){
-    alert(name);
+    this.composerService.filterComposers(name);
   }
 
 }
