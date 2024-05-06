@@ -11,7 +11,9 @@ import { BooksService } from '../books.service';
 export class BookListComponent implements OnInit {
 
   books: Observable<IBook[]>;
-  header: Array<string> = ['isbn', 'title', 'numOfPages', 'authors']
+  header: Array<string> = ['isbn', 'title', 'numOfPages', 'authors'];
+  book: IBook;
+  
   constructor(private booksService: BooksService) {
     this.books= this.booksService.getBooks();
    }
@@ -19,8 +21,11 @@ export class BookListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   showBookDetails(isbn: string) {
     this.book = this.booksService.getBook(isbn);
     console.log(this.book);
   }
+
 }
+
