@@ -15,7 +15,7 @@ import{ MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
-import { MatDialogModule } from '@angular/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -37,7 +37,7 @@ import { MatDialogModule } from '@angular/dialog';
     MatListModule,
     FlexLayoutModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
     MatDialogModule
   ],
   providers: [],
