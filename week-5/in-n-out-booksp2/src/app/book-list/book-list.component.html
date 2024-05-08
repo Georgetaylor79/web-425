@@ -5,7 +5,7 @@
     <table fxFlex mat-table [dataSource]="books" class="mat-elevation-z8">
 
         <tr mat-header-row *matHeaderRowDef="header"></tr>
-        <tr mat-row *matRowDef="let row; column: header"></tr>
+        <tr mat-row *matRowDef="let row; columns: header"></tr>
 
         <ng-container  matColumnDef="isbn">
             <th mat-header-cell *matHeaderCellDef>ISBN</th>
