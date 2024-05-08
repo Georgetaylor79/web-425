@@ -12,7 +12,9 @@ export class BookDetailsDialogComponent implements OnInit {
 
   book: IBook;
 
-  constructor(private dialogRef: MatDialogRef<BookDetailsDialogComponent>, @Inject(MAT_DIALOG_DATA) data) { }
+  constructor(private dialogRef: MatDialogRef<BookDetailsDialogComponent>, @Inject(MAT_DIALOG_DATA) data) {
+    this.book = data.book;
+   }
 
   ngOnInit(): void {
   }
