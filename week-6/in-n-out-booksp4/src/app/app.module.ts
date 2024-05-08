@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 
 
@@ -25,7 +26,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     BookListComponent,
     ContactComponent,
     AboutComponent,
-    BookDetailsDialogComponent
+    BookDetailsDialogComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,
