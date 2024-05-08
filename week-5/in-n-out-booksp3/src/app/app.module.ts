@@ -14,6 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
 import{ MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
+import { MatDialogModule } from '@angular/dialog';
+
 
 
 @NgModule({
@@ -21,7 +24,8 @@ import { MatTableModule } from '@angular/material/table';
     AppComponent,
     BookListComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    BookDetailsDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +38,7 @@ import { MatTableModule } from '@angular/material/table';
     FlexLayoutModule,
     MatIconModule,
     MatTableModule
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
