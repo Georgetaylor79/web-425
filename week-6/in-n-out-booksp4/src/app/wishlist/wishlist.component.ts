@@ -15,7 +15,7 @@ export class WishlistComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  updateItemHandler(item: IWishlistItem) {
+  updateItemsHandler(item: IWishlistItem) {
     this.items.push(item);
   }
 
