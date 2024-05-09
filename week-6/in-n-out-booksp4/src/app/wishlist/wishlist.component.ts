@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IWishListItem } from '../wishlist-item.interface';
+import { IWishlistItem } from '../wishlist-item.interface';
 
 @Component({
   selector: 'app-wishlist',
@@ -8,14 +8,14 @@ import { IWishListItem } from '../wishlist-item.interface';
 })
 export class WishlistComponent implements OnInit {
 
-  items: Array<IWishListItem> = [];
+  items: Array<IWishlistItem> = [];
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  updateItemHandler(item: IWishListItem) {
+  updateItemHandler(item: IWishlistItem) {
     this.items.push(item);
   }
 

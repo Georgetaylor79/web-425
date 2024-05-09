@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import {IWishlistItem } from '../wishlist-item.interface';
+import { IWishlistItem } from '../wishlist-item.interface';
 
 @Component({
   selector: 'app-wishlist-create',
