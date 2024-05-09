@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BaseLayoutComponent implements OnInit {
 
-  constructor() { }
+  assignment: string;
+
+  constructor() {
+    this.assignment = 'Exercise 6.3 - Layouts'
+  }
+
 
   ngOnInit(): void {
   }
