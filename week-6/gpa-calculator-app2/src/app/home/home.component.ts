@@ -11,14 +11,15 @@ export class HomeComponent implements OnInit {
   transcriptEntry: ITranscript;
   selectableGrades: Array<string> = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'];
   transcriptEntries: Array<ITranscript> = [];
-  gpaTotal: number = 0;
+  gpaTotal: number = 0;;
 
   constructor() {
     this.transcriptEntry = {} as ITranscript;
-   }
+  }
 
   ngOnInit(): void {
   }
+
   saveEntry() {
     this.transcriptEntries.push(this.transcriptEntry);
     this.transcriptEntry = {} as ITranscript;

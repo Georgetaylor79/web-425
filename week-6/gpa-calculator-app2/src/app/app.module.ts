@@ -44,7 +44,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatInputModule,
     MatListModule,
     FormsModule,
-    MatSelectModule
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
