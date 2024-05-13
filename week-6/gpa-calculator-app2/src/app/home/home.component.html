@@ -1,4 +1,4 @@
-<div fxLayout="row wrap" fxLayoutGap="20 px">
+<div fxLayout="row wrap" fxLayoutGap="20px">
   <div class="grade-form" fxFlex>
     <mat-card class="mat-elevation-z8">
 
@@ -8,19 +8,18 @@
         <form fxLayout="column" fxLayoutGap="16px">
           <mat-form-field fxFlex appearance="fill">
             <mat-label>Course</mat-label>
-            <input type="text" name="txtCourse" id="txtCourse" matInput [ (ngModel)]="transcriptEntry.course" />
+            <input type="text" name="txtCourse" id="txtCourse" matInput [(ngModel)]="transcriptEntry.course" />
           </mat-form-field>
 
-
-            <mat-form-field fxFlex appearance="fill">
-              <mat-label>Grade</mat-label>
-              <mat-select [ngModel]="transcriptEntry.grade" name="selectGrade">
-                <mat-option *ngFor="let grade of selectableGrades" [value]="grade">
-                  {{ grade }}
-                </mat-option>
-              </mat-select>
-            </mat-form-field>
-            <button mat-raised-button color="primary" (click)="saveEntry()">Save</button>
+          <mat-form-field fxFlex appearance="fill">
+            <mat-label>Grade</mat-label>
+            <mat-select [(ngModel)]="transcriptEntry.grade" name="selectGrade">
+              <mat-option *ngFor="let grade of selectableGrades" [value]="grade">
+                {{ grade }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="saveEntry()">Save</button>
         </form>
       </mat-card-content>
     </mat-card>
@@ -29,6 +28,7 @@
   <div class="grade-summary" fxFlex>
     <button mat-button color="primary" (click)="clearEntries()">Clear Transcript</button>
     <mat-card class="mat-elevation-z8">
+      <mat-card-title>Transcript</mat-card-title>
       <mat-card-content>
         <app-grade-summary *ngFor="let entry of transcriptEntries" [course]="entry.course" [grade]="entry.grade"></app-grade-summary>
       </mat-card-content>
@@ -39,14 +39,12 @@
 
 <br /><br />
 
-
-<div fxLayout="column" fxLayoutGap="20 px">
+<div fxLayout="column" fxLayoutGap="20px">
   <div fxFlex class="gpa">
     <button mat-button color="primary" (click)="calculateResults()">Calculate GPA</button>
 
-
     <mat-card class="mat-elevation-z8">
-      <mat-card-title styles="text-align: center;">
+      <mat-card-title style="text-align: center;">
         GPA: <app-gpa [gpaTotal]="gpaTotal"></app-gpa>
       </mat-card-title>
     </mat-card>
