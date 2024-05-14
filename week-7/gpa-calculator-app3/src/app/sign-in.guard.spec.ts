@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { SignInGuard } from './sign-in.guard';
 
-describe('SiginInGuard', () => {
+describe('SignInGuard', () => {
   let guard: SignInGuard;
 
   beforeEach(() => {
