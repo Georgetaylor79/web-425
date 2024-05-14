@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { SignInGuard } from './sign-in.guard';
+import { SignInGuard } from './sigin-in.guard';
 
 
 const routes: Routes = [
