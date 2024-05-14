@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-base-layout',
@@ -9,7 +11,7 @@ export class BaseLayoutComponent implements OnInit {
 
   assignment: string;
 
-  constructor() {
+  constructor(private cookieService: CookieService, private router: Router) {
     this.assignment = 'Exercise 7.2 -  Reactive Forms'
   }
 
@@ -17,4 +19,9 @@ export class BaseLayoutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  signOut() {
+    this.cookieService.deleteAll();
+    this.router.navigate(['/session/sign-in']);
+  }
 }
