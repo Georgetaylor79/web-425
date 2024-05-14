@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-
+import { SignInGuard } from './sign-in.guard';
 
 
 const routes: Routes = [
@@ -17,11 +17,9 @@ const routes: Routes = [
         path:'',
         component: HomeComponent
       }
-
-    ]
+    ],
+    canActivate: [SignInGuard]
   },
-
-
   {
     path: 'session',
     component: AuthLayoutComponent,
@@ -40,7 +38,6 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'session/not-found'
   }
-
 ];
 
 @NgModule({
