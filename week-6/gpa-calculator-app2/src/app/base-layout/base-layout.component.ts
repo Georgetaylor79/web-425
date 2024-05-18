@@ -10,7 +10,7 @@ export class BaseLayoutComponent implements OnInit {
   assignment: string;
 
   constructor() {
-    this.assignment = 'Exercise 7.2 - Reactive Forms'
+    this.assignment = 'Assignment 6.4 - Input Properties'
   }
 
 
