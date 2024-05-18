@@ -17,9 +17,10 @@ import { GradeSummaryComponent } from './grade-summary/grade-summary.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { SignInComponent } from './sign-in/sign-in.component';
+
 
 
 
@@ -47,6 +48,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     MatListModule,
     FormsModule,
     MatSelectModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
