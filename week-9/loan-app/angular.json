@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "loan-app"
+    }
+  },
+  "defaultProject": "loan-app",
+  "cli": {
+    "analytics": false
+  }
 }
