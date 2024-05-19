@@ -28,6 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatCardModule,
     MatListModule,
+    FlexLayoutModule,
     MatIconModule
   ],
   providers: [],
