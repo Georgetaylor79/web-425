@@ -4,7 +4,7 @@ import { HomeComponent } from './home.component';
 
 describe('BookListComponent', () => {
   let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+  let fixture: ComponentFixture<book-listComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
