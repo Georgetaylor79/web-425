@@ -16,7 +16,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { BookDetailsDoingComponent } from './book-details-doing/book-details-doing.component';
+import { WishlistCreateComponent } from './wishlist-create/wishlist-create.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 
 
@@ -27,7 +34,8 @@ import { BookDetailsDoingComponent } from './book-details-doing/book-details-doi
     ContactComponent,
     AboutComponent,
     BookDetailsDialogComponent,
-    BookDetailsDoingComponent
+    WishlistCreateComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +48,12 @@ import { BookDetailsDoingComponent } from './book-details-doing/book-details-doi
     FlexLayoutModule,
     MatIconModule,
     MatTableModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
